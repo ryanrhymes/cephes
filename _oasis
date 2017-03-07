@@ -32,8 +32,11 @@ Library cephes
   Modules:          Cephes,
                     Ffi_cephes_bindings,
                     Ffi_cephes_generated
-  CSources:         ffi_cephes_generated_stub.c
+  CSources:         cmath/mconf.h,
+                    cmath/protos.h,
+                    ffi_cephes_generated_stub.c
   CCOpt:            -I$pkg_ctypes
+                    -I./lib/cmath
   BuildDepends:     ctypes, ctypes.stubs
 
 # +-------------------------------------------------------------------+

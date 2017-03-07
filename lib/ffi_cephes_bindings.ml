@@ -11,4 +11,6 @@ module Bindings (F : Cstubs.FOREIGN) = struct
 
   let acosh = foreign "acosh" (double @-> returning double)
 
+  let airy = foreign "airy" (double @-> ptr double @-> ptr double @-> ptr double @-> ptr double @-> returning int)
+
 end

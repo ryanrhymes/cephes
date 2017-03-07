@@ -34,8 +34,24 @@ Library cephes
                     Ffi_cephes_generated
   CSources:         cmath/mconf.h,
                     cmath/protos.h,
+                    cmath/acosh.c,
+                    cmath/asin.c,
+                    cmath/asinh.c,
+                    cmath/atan.c,
+                    cmath/atanh.c,
+                    cmath/cbrt.c,
+                    cmath/chbevl.c,
+                    cmath/const.c,
+                    cmath/cosh.c,
+                    cmath/drand.c,
+                    cmath/exp.c,
+                    cmath/isnan.c,
+                    cmath/polevl.c,
+                    cmath/mtherr.c,
+                    bessel/airy.c,
                     ffi_cephes_generated_stub.c
   CCOpt:            -I$pkg_ctypes
+                    -I./lib/bessel
                     -I./lib/cmath
   BuildDepends:     ctypes, ctypes.stubs
 

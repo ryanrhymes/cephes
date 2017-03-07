@@ -45,10 +45,19 @@ Library cephes
                     cmath/cosh.c,
                     cmath/drand.c,
                     cmath/exp.c,
+                    cmath/exp2.c,
+                    cmath/exp10.c,
                     cmath/isnan.c,
                     cmath/polevl.c,
                     cmath/mtherr.c,
                     bessel/airy.c,
+                    cprob/bdtr.c,
+                    cprob/expx2.c,
+                    cprob/incbet.c,
+                    cprob/incbi.c,
+                    cprob/gamma.c,
+                    cprob/ndtr.c,
+                    cprob/ndtri.c,
                     ffi_cephes_generated_stub.c
   CCOpt:            -I$pkg_ctypes
                     -I./lib/bessel

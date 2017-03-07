@@ -29,10 +29,12 @@ PostBuildCommand:   echo "Phew ... it is done!";
 Library cephes
   Path:             lib
   BuildTools:       ocamlbuild
-  Modules:          Cephes
-  CSources:         Cephes/mconf.h,
-                    Cephes/acosh.c,
-                    Cephes/asinh.c
+  Modules:          Cephes,
+                    Ffi_cephes_bindings,
+                    Ffi_cephes_generated
+  CSources:         mconf.h,
+                    protos.h,
+                    ffi_cephes_generated_stub.c
   CCOpt:            -I$pkg_ctypes
   BuildDepends:     ctypes, ctypes.stubs
 

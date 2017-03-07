@@ -23,7 +23,7 @@ extern double chbevl ( double, void *, int );
 extern double chdtrc ( double df, double x );
 extern double chdtr ( double df, double x );
 extern double chdtri ( double df, double y );
-extern void clog ( cmplx *z, cmplx *w );
+/* extern void clog ( cmplx *z, cmplx *w );
 extern void cexp ( cmplx *z, cmplx *w );
 extern void csin ( cmplx *z, cmplx *w );
 extern void ccos ( cmplx *z, cmplx *w );
@@ -39,7 +39,7 @@ extern void cdiv ( cmplx *a, cmplx *b, cmplx *c );
 extern void cmov ( void *a, void *b );
 extern void cneg ( cmplx *a );
 extern double cabs ( cmplx *z );
-extern void csqrt ( cmplx *z, cmplx *w );
+extern void csqrt ( cmplx *z, cmplx *w ); */
 extern double hypot ( double, double );
 extern double cosh ( double );
 extern double dawsn ( double xx );

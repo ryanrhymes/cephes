@@ -69,7 +69,7 @@ module Bindings (F : Cstubs.FOREIGN) = struct
 
   let exp10 = foreign "exp10" (double @-> returning double)
 
-  let exp1m = foreign "exp1m" (double @-> returning double)
+  let expm1 = foreign "expm1" (double @-> returning double)
 
   let exp2 = foreign "exp2" (double @-> returning double)
 

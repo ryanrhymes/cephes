@@ -51,6 +51,7 @@ Library cephes
                     cmath/isnan.c,
                     cmath/polevl.c,
                     cmath/mtherr.c,
+                    cmath/unity.c,
                     bessel/airy.c,
                     cprob/bdtr.c,
                     cprob/btdtr.c,
@@ -66,12 +67,13 @@ Library cephes
                     ellf/ellf.c,
                     ellf/ellie.c,
                     ellf/ellik.c,
-                    ellf/ellpe,c,
+                    ellf/ellpe.c,
                     ellf/ellpj.c,
                     ellf/ellpk.c,
                     linalg/eigens.c,
                     misc/beta.c,
                     misc/dawsn.c,
+                    misc/expn.c,
                     ffi_cephes_generated_stub.c
   CCOpt:            -I$pkg_ctypes
                     -I./lib/bessel

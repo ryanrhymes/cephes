@@ -15,7 +15,7 @@ value owl_stub_2_airy(value x10, value x9, value x8, value x7, value x6)
    double* x16 = CTYPES_ADDR_OF_FATPTR(x7);
    double* x17 = CTYPES_ADDR_OF_FATPTR(x6);
    int x18 = airy(x11, x14, x15, x16, x17);
-   return Val_int(x18);
+   return Val_long(x18);
 }
 value owl_stub_3_asin(value x19)
 {
@@ -56,24 +56,24 @@ value owl_stub_8_atanh(value x48)
 }
 value owl_stub_9_bdtrc(value x55, value x54, value x53)
 {
-   int x56 = Int_val(x55);
-   int x59 = Int_val(x54);
+   int x56 = Long_val(x55);
+   int x59 = Long_val(x54);
    double x62 = Double_val(x53);
    double x65 = bdtrc(x56, x59, x62);
    return caml_copy_double(x65);
 }
 value owl_stub_10_bdtr(value x68, value x67, value x66)
 {
-   int x69 = Int_val(x68);
-   int x72 = Int_val(x67);
+   int x69 = Long_val(x68);
+   int x72 = Long_val(x67);
    double x75 = Double_val(x66);
    double x78 = bdtr(x69, x72, x75);
    return caml_copy_double(x78);
 }
 value owl_stub_11_bdtri(value x81, value x80, value x79)
 {
-   int x82 = Int_val(x81);
-   int x85 = Int_val(x80);
+   int x82 = Long_val(x81);
+   int x85 = Long_val(x80);
    double x88 = Double_val(x79);
    double x91 = bdtri(x82, x85, x88);
    return caml_copy_double(x91);
@@ -110,7 +110,7 @@ value owl_stub_16_chbevl(value x130, value x129, value x128)
 {
    double x131 = Double_val(x130);
    double* x134 = CTYPES_ADDR_OF_FATPTR(x129);
-   int x135 = Int_val(x128);
+   int x135 = Long_val(x128);
    double x138 = chbevl(x131, x134, x135);
    return caml_copy_double(x138);
 }
@@ -159,7 +159,7 @@ value owl_stub_23_eigens(value x188, value x187, value x186, value x185)
    double* x189 = CTYPES_ADDR_OF_FATPTR(x188);
    double* x190 = CTYPES_ADDR_OF_FATPTR(x187);
    double* x191 = CTYPES_ADDR_OF_FATPTR(x186);
-   int x192 = Int_val(x185);
+   int x192 = Long_val(x185);
    eigens(x189, x190, x191, x192);
    return Val_unit;
 }
@@ -193,7 +193,7 @@ value owl_stub_27_ellpj(value x224, value x223, value x222, value x221,
    double* x233 = CTYPES_ADDR_OF_FATPTR(x220);
    double* x234 = CTYPES_ADDR_OF_FATPTR(x219);
    int x235 = ellpj(x225, x228, x231, x232, x233, x234);
-   return Val_int(x235);
+   return Val_long(x235);
 }
 value owl_stub_27_ellpj_byte6(value* argv, int argc)
 {
@@ -217,10 +217,10 @@ value owl_stub_29_exp10(value x247)
    double x251 = exp10(x248);
    return caml_copy_double(x251);
 }
-value owl_stub_30_exp1m(value x252)
+value owl_stub_30_expm1(value x252)
 {
    double x253 = Double_val(x252);
-   double x256 = exp1m(x253);
+   double x256 = expm1(x253);
    return caml_copy_double(x256);
 }
 value owl_stub_31_exp2(value x257)
@@ -232,7 +232,7 @@ value owl_stub_31_exp2(value x257)
 value owl_stub_32_expn(value x263, value x262)
 {
    double x264 = Double_val(x263);
-   int x267 = Int_val(x262);
+   int x267 = Long_val(x262);
    double x270 = expn(x264, x267);
    return caml_copy_double(x270);
 }

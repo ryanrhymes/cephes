@@ -50,7 +50,7 @@ extern double ellpe ( double );
 extern int ellpj ( double u, double m, double *sn, double *cn, double *dn, double *ph );
 extern double ellpk ( double );
 extern double exp10 ( double );
-extern double exp1m ( double );
+extern double expm1 ( double );
 extern double exp2 ( double );
 extern double expn ( int n, double x );
 extern double fac ( int i );

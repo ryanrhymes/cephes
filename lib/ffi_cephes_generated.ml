@@ -67,7 +67,7 @@ external owl_stub_28_ellpk : float -> float = "owl_stub_28_ellpk"
 
 external owl_stub_29_exp10 : float -> float = "owl_stub_29_exp10" 
 
-external owl_stub_30_exp1m : float -> float = "owl_stub_30_exp1m" 
+external owl_stub_30_expm1 : float -> float = "owl_stub_30_expm1" 
 
 external owl_stub_31_exp2 : float -> float = "owl_stub_31_exp2" 
 
@@ -90,7 +90,7 @@ let foreign : type a b. string -> (a -> b) fn -> (a -> b) =
 | Function (CI.Primitive CI.Double, Returns (CI.Primitive CI.Double)), "exp2" ->
   owl_stub_31_exp2
 | Function (CI.Primitive CI.Double, Returns (CI.Primitive CI.Double)),
-  "exp1m" -> owl_stub_30_exp1m
+  "expm1" -> owl_stub_30_expm1
 | Function (CI.Primitive CI.Double, Returns (CI.Primitive CI.Double)),
   "exp10" -> owl_stub_29_exp10
 | Function (CI.Primitive CI.Double, Returns (CI.Primitive CI.Double)),

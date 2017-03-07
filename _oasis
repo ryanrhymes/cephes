@@ -52,12 +52,17 @@ Library cephes
                     cmath/mtherr.c,
                     bessel/airy.c,
                     cprob/bdtr.c,
+                    cprob/btdtr.c,
+                    cprob/chdtr.c,
                     cprob/expx2.c,
                     cprob/incbet.c,
                     cprob/incbi.c,
                     cprob/gamma.c,
+                    cprob/igam.c,
+                    cprob/igami.c,
                     cprob/ndtr.c,
                     cprob/ndtri.c,
+                    misc/beta.c,
                     ffi_cephes_generated_stub.c
   CCOpt:            -I$pkg_ctypes
                     -I./lib/bessel

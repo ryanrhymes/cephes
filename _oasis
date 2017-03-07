@@ -41,6 +41,7 @@ Library cephes
                     cmath/atanh.c,
                     cmath/cbrt.c,
                     cmath/chbevl.c,
+                    cmath/cmplx.c,
                     cmath/const.c,
                     cmath/cosh.c,
                     cmath/drand.c,
@@ -62,11 +63,23 @@ Library cephes
                     cprob/igami.c,
                     cprob/ndtr.c,
                     cprob/ndtri.c,
+                    ellf/ellf.c,
+                    ellf/ellie.c,
+                    ellf/ellik.c,
+                    ellf/ellpe,c,
+                    ellf/ellpj.c,
+                    ellf/ellpk.c,
+                    linalg/eigens.c,
                     misc/beta.c,
+                    misc/dawsn.c,
                     ffi_cephes_generated_stub.c
   CCOpt:            -I$pkg_ctypes
                     -I./lib/bessel
                     -I./lib/cmath
+                    -I./lib/cprob
+                    -I./lib/ellf
+                    -I./lib/linalg
+                    -I./lib/misc
   BuildDepends:     ctypes, ctypes.stubs
 
 # +-------------------------------------------------------------------+
